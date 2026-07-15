@@ -50,6 +50,7 @@ export const AppRoutes = () => {
       <Route path="/restaurantes" element={<PublicRestaurantsPage />} />
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/verify-email" element={<VerifyEmailPage />} />
+      <Route path="/auth/verify-email" element={<VerifyEmailPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/unauthorized" element={<UnauthorizedPage />} />
       <Route
@@ -118,7 +119,8 @@ export const AppRoutes = () => {
         <Route path="reviews" element={<ClientReviews />} />
         <Route path="profile" element={<UserProfile user={user} />} />
       </Route>
-   
+
+      <Route path="*" element={<LandingPage />} />
     </Routes>
   )
 }
